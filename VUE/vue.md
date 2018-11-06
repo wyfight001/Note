@@ -142,3 +142,41 @@
 </script>
 ```
 
+## json-server
+
+- 这个工具已经在服务端处理了跨域的问题
+- 真正的场景是需要在客户端解决跨域（通用解决方案就是代理服务器）
+
+`npm i -g json-server`安装
+
+`json-server --watch db.json`启动结构服务
+
+增删改查：
+
+- `GET/list`查询所有
+- `GET/list/id`查询单个
+- `POST/list`添加
+- `DELETE/list/id`根据id删除
+- `PATCH/list/id`根据id修改
+
+## 接口测试工具： POSTMAN
+
+## http-server
+
+安装`npm i http-server`
+
+查看帮助`hs -h`
+
+基本使用
+
+```
+#默认占用8080端口启动一个服务器，直接打开浏览器
+hs -o
+
+#指令占用端口开启服务器
+hs -p 3001 -o
+
+#不启用缓存开启
+hs -c-1 -p 3001 -o
+```
+
